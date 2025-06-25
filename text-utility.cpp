@@ -1,8 +1,8 @@
 #include "text_utility.h"
-#include <cctype>   // for isalpha, isspace, tolower
-#include <cstring>  // for strlen
+#include <cctype> 
+#include <cstring> 
 
-// Count words in the string (words separated by whitespace)
+
 int wordCount(const char* str) {
     if (!str) return 0;
     int count = 0;
@@ -19,7 +19,7 @@ int wordCount(const char* str) {
     return count;
 }
 
-// Count characters excluding null terminator
+
 int charCount(const char* str) {
     if (!str) return 0;
     int len = 0;
@@ -29,7 +29,7 @@ int charCount(const char* str) {
     return len;
 }
 
-// Count vowels and consonants in the string
+
 void countVowelsAndConsonants(const char* str, int& vowels, int& consonants) {
     vowels = 0;
     consonants = 0;
@@ -47,7 +47,7 @@ void countVowelsAndConsonants(const char* str, int& vowels, int& consonants) {
     }
 }
 
-// Reverse the string in-place
+
 void reverseString(char* str) {
     if (!str) return;
     int len = 0;
