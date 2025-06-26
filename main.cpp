@@ -19,7 +19,7 @@ int main() {
 
     for (int i = 0; i < numTests; i++) {
         char* current = tests[i];
-    }
+    
 
         cout << "Test string: \"" << current << "\"\n";
 
