@@ -19,43 +19,43 @@ int main() {
 
     for (int i = 0; i < numTests; i++) {
         char* current = tests[i];
-        char temp[100];  
-        strcpy(temp, current);
+    }
 
         cout << "Test string: \"" << current << "\"\n";
 
         // Word Count
-        int wCount = wordCount(temp);
+        int wCount = wordCount(current);
         cout << "Word Count: " << wCount << "\n";
 
         // Character Count
-        int cCount = charCount(temp);
+        int cCount = charCount(current);
         cout << "Character Count (excluding null): " << cCount << "\n";
 
         // Vowel and Consonant Count
         int vowels = 0, consonants = 0;
-        countVowelsAndConsonants(temp, vowels, consonants);
+        countVowelsAndConsonants(current, vowels, consonants);
         cout << "Vowels: " << vowels << ", Consonants: " << consonants << "\n";
 
         // Palindrome Check
-        cout << "Is \"" << temp << "\" a palindrome? " << palindrome(temp) << "\n";
-
-        // Reverse
-        reverseString(temp);
-        cout << "Reversed: " << temp << "\n";
+        cout << "Is \"" << current << "\" a palindrome? " << palindrome(current) << "\n";
 
         // Convert to uppercase
-        convert_to_upper(temp);
-        cout << "Uppercase: " << temp << "\n";
+        convert_to_upper(current);
+        cout << "Uppercase: " << current << "\n";
 
         // Convert to lowercase
-        convert_to_lower(temp);
-        cout << "Lowercase: " << temp << "\n";
+        convert_to_lower(current);
+        cout << "Lowercase: " << current << "\n";
 
         // Substring Count
         const char* substr = "ab";
-        int subCount = substringcount(temp, substr);
+        int subCount = substringcount(current, substr);
         cout << "Substring count for \"" << substr << "\": " << subCount << "\n";
+
+            // Reverse
+        reverseString(current);
+        cout << "Reversed: " << current << "\n";
+
 
         cout << "----------------------------------------\n\n";
     }
